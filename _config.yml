@@ -1,0 +1,23 @@
+# Site settings
+title: Blue Hills Cycling Club
+email: pedro@bluehillscycling.com
+description: > # this means to ignore newlines until "baseurl:"
+ Road Cycling, Mountain Biking and Cyclocross in the Greater Boston Area
+  
+  
+  
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+paginate: 3
+
+tp_host: 'ftp.bluehillscycling.com'
+ftp_dir: 'public_html/BHCC-4'
+ftp_passive: true
+
+# optional
+#ftp_port: 21                  # default 21

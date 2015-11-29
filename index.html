@@ -1,0 +1,106 @@
+---
+layout: default
+page-banner: "home"
+id: home
+---
+<div class="home">
+
+
+
+<div class = "row">
+  <div class = "span6" style="width:500px">
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <p class="author">
+    <span class="date">{{ post.date }}</span>
+  </p>
+  <div class="content">
+    {{ post.content }}
+  </div>
+{% endfor %}
+
+<!-- Pagination links -->
+<div class="pagination">
+
+<ul>
+
+  {% if paginator.previous_page %}
+    
+    
+    <li><a href="{{ paginator.previous_page_path }}" class="previous">Previous</a></li>
+  {% else %}
+    
+    
+    <li><a>Previous</a></li>
+  {% endif %}
+  
+    <li><a>Page: {{ paginator.page }} of {{ paginator.total_pages }}</a></li>
+  {% if paginator.next_page %}
+      <li><a href="{{ paginator.next_page_path }}" class="next">Next</a></li>
+  {% else %}
+     <li><a>>Next</a></li>
+  {% endif %}
+  
+  </ul>
+</div>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+   </div>
+               <div class="span1" style="width:150px;  margin-left:70px">
+                      
+		   		<div style="padding-bottom:15px; padding-left:5px;"><a href="https://twitter.com/BlueHillsCC" class="twitter-follow-button" data-show-count="false" >Follow @BlueHillsCC</a></div>
+                <a href="https://www.bikereg.com/the-barn-burner" ><img  src="/images/theburner.png" width = "100%"  alt="The Barn Burner"/></a>
+                <a style ="padding-bottom:5px" href="http://www.coldfusiongelato.com/" onclick="trackOutboundLink('http://www.coldfusiongelato.com/')"><img  src="/images/sponser/cold_fusion.png" width = "100%"  alt="Cold Fusion"/></a>
+                <a href="http://flatblackcoffee.com/" onclick="trackOutboundLink('http://flatblackcoffee.com/')"><img  src="/images/sponser/flat_black.png" width = "100%"  alt="Flat Black Coffee"/></a>
+                <a href="http://www.landrys.com/" onclick="trackOutboundLink('http://www.landrys.com/'"><img  src="/images/sponser/landry.png" width = "100%"  alt="Landry's"/></a>
+                
+                 <!--<a href="http://www.panaracer.com/" onclick="trackOutboundLink('http://www.panaracer.com/')"><img  src="/images/sponser/panaracer.png" width = "100%"  alt="Panaracer"/></a>-->
+                <!--<a href="http://osmonutrition.com/" onclick="trackOutboundLink('http://www.osmonutrition.com/')"><img  src="/images/sponser/osmo.png" width = "100%"  alt="Osmo"/></a>-->
+                <a href="http://www.tatelabs.com/" onclick="trackOutboundLink('http://www.tatelabs.com/')"><img  src="/images/sponser/barfly.png" width = "100%"  alt="Tate Lab's"/></a>
+                <a href="http://www.holdfastcoaching.com/" onclick="trackOutboundLink('http://www.holdfastcoaching.com/')"><img  src="/images/sponser/holdfast.png" width = "100%"  alt="Hold Fast Coaching"/></a>
+                <a href="http://www.dancingdeer.com/ "onclick="trackOutboundLink('http://www.dancingdeer.com/')"><img  src="/images/sponser/dancing_deer.png" width = "100%"  alt="Dancing Deer Baking Company"/></a>
+                <a href="http://esigrips.com/" onclick="trackOutboundLink('http://www.esigrips.com/')"><img  src="/images/sponser/ESIGrips.png" width = "100%"  alt="ESI Grips"/></a>
+                <a href="http://www.doctorsfootcare.net/" onclick="trackOutboundLink('http://www.doctorsfootcare.com/')"><img  src="/images/sponser/wynn.png" width = "100%"  alt="Doctors Foot Care"/></a>
+               <!--<a href="http://www.switchbackmb.com" onclick="trackOutboundLink('http://www.switchbackmb.com/')"><img  src="/images/sponser/switchback.png" width = "100%"  alt="Switchback Magazine"/></a>-->
+                <!--<a href="http://honeybikes.com/" onclick="trackOutboundLink('http://honeybikes.com/')"><img  src="/images/sponser/honey.png" width = "100%"  alt="Honey Bikes"/></a>-->
+                <h3>Archives</h3>
+<div class="accordion" id="accordion2">
+
+{% for post in site.posts %}
+  {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
+  {% if currentyear != year %}
+    {% unless forloop.first %}</ul>
+        </div>
+    </div>
+    </div>
+</div>
+    {% endunless %}
+    <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#{{ currentyear }}">
+        <h3>{{ currentyear }}</h3>
+    </a>
+    
+      <div id="{{ currentyear }}" class="accordion-body collapse">
+      <div class="accordion-inner"><ul class="unstyled">
+    {% capture year %}{{currentyear}}{% endcapture %} 
+  {% endif %}
+  
+
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+ 
+

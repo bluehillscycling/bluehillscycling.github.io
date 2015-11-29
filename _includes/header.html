@@ -1,0 +1,79 @@
+
+ <div style ="background-color:#333; height:35px; margin-top:85px;"></div>
+    
+ <div class = "row" style ="display: table; margin:0 auto; margin-top:-125px;">
+     <div class ="span8" style="margin:0px; width: 100%;"><img src='{{ site.baseurl }}/images/BHHC-Banner.png'></div>
+
+ </div>
+
+<div class="navbar">  
+    <div class="navbar-inner" style="padding-top:-50px;">
+          
+         <div class ="row" style ="display: table; margin:0 auto;" >
+            <div class ="span10">
+            <ul id = "navlist" class="nav"  style ="padding-top-20px;">
+              <li style="font-family: Tahoma, Verdana, Segoe, sans-serif;"><a id ="home" href="/"data-current-page="home">Home</a></li>
+                <li><a href="/about" data-current-page="about">About</a></li>
+                <li><a href="/join">Join</a></li>
+                <li><a href="/club_rides" id ="clubrides">Club Rides</a></li>
+                <li><a href="/race_team" id="race_team">Race Team</a></li>
+                <li><a href="/races">Our Races</a></li>
+                <li><a href="/king_of_the_blue_hills" id ="strava">King of the Blue Hills</a></li>
+                <li><a href="/forum" id ="forum">Forum</a></li>    
+            </ul>
+            
+            </div>
+         </div>
+      </div>
+      </div>
+
+      {% if page.page-banner =="home" %}
+
+      <div id="container" style ="padding-top:15px">     
+        <div id = "mainslider" class = "row" style ="display:table; margin:0 auto;">
+            <div class = "span10">
+                <ul class="rslides" id = "slider1">
+                    <li><img src='{{ site.baseurl }}/images/harpoonb2b.jpg' alt="Blue Hills MTBS"/></li>
+                    <li><img src='{{ site.baseurl }}/images/bluehillsmtb.jpg' alt="Blue Hills MTBS"/></li>
+                    <li><img src='{{ site.baseurl }}/images/marathon.jpg' alt="Marathon Monday"/></li>
+                </ul>
+            </div>
+        </div>
+          <!-- <div class = "row" style="display:table; margin:0 auto; padding-top:15px;">
+           <div class="span10"  >
+               <div class="alert alert-block">
+                   <button type="button" class="close" data-dismiss="alert">&times;</button>
+                   <h3>Boston Rebellion/Barn Burner Techincal Guide</h3>
+                   <p>Click <a href="https://drive.google.com/file/d/0B82Riu7t3WPHZ3BjTjRqWmFBMDA/edit">here</a> to download the Boston Rebellion and Barnburner Technical Guide. Register on <a https://www.bikereg.com/the-barn-burner>Bikereg</a>.</p>
+               </div>
+           </div>
+        </div>   -->
+      </div>
+    {% elsif page.page-banner == Nil %}
+
+
+     {% else %}
+      <div style ="padding-top:15px">     
+        <div class = "row" style ="display:table; margin:0 auto;">
+            <div class = "span10">
+                <img src='/images/{{ page.page-banner }}'alt="Race Team" />
+            </div>
+        </div>
+    </div>
+     {% endif %}
+
+{% if page.page-banner =="king.png" %}
+<!--<div style ="padding-top:15px">     
+    <div class = "row" style ="display:table; margin:0 auto;">
+        <div class = "span10">
+         <div class="alert alert-success">
+           <button type="button" class="close" data-dismiss="alert">&times;</button>
+           <h2>Get Ready for Next Year!</h2>
+           <p style="padding-top:10px;">Thank you for participating in the 2014 King of the Blue Hills competition!  The competition will return in 2015, stay tuned for details!</p>
+         </div>
+       </div>
+     </div>
+     </div>-->
+  {% endif %}
+
+     

@@ -1,0 +1,22 @@
+---
+layout: post
+status: publish
+published: true
+title: New Site
+author:
+  display_name: Pete
+  login: Pete
+  email: pete@bluehillscycling.com
+  url: ''
+author_login: Pete
+author_email: pete@bluehillscycling.com
+wordpress_id: 71
+wordpress_url: http://www.bluehillscycling.com/BHCC-3/?p=71
+date: '2012-11-12 00:18:00 -0500'
+date_gmt: '2012-11-12 00:18:00 -0500'
+categories:
+- Uncategorized
+tags: []
+comments: []
+---
+<p>New site is up and running. Take a look around. A guide for writing race reports, posting photos, and updating group rides will be sent to BHCC members soon.</p>
