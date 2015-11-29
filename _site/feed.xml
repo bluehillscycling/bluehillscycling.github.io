@@ -9,9 +9,9 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 29 Nov 2015 10:39:04 -0500</pubDate>
-    <lastBuildDate>Sun, 29 Nov 2015 10:39:04 -0500</lastBuildDate>
-    <generator>Jekyll v2.5.2</generator>
+    <pubDate>Sun, 29 Nov 2015 13:17:00 -0500</pubDate>
+    <lastBuildDate>Sun, 29 Nov 2015 13:17:00 -0500</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
     
       <item>
         <title>2015 Hampshire 100</title>
@@ -52,8 +52,8 @@
 &lt;iframe width=&quot;500&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Iy8PU1AQk1Y&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Mon, 20 Jul 2015 00:00:00 -0400</pubDate>
-        <link>http://yourdomain.com/2015/07/20/Boston%20Rebellion%20&%20The%20Barn%20Burner.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2015/07/20/Boston%20Rebellion%20&%20The%20Barn%20Burner.html</guid>
+        <link>http://yourdomain.com/2015/07/20/Boston-Rebellion-&-The-Barn-Burner.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2015/07/20/Boston-Rebellion-&-The-Barn-Burner.html</guid>
         
         
       </item>

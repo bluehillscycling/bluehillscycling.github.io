@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body {% if page.id %} data-current-page="{{ page.id }}"{% endif %}>
+  <body  {% if page.id %} data-current-page="{{ page.id }}"{% endif %}>
 <style>
 video{
 
@@ -30,6 +30,13 @@ background-color: rgba(255, 255, 255, 0.44);
 }
 
 </style>
+<script>
+  
+ $(window).load(function () {
+ 
+     $(".page-content").show();
+});
+</script>
 
 {% if page.title == home %}
 <video poster="{{ site.baseurl }}/images/adams.png"  autoplay loop>
@@ -39,7 +46,7 @@ background-color: rgba(255, 255, 255, 0.44);
 {% endif %}
     {% include header.html %}
 
-    <div class="page-content">
+    <div style="display:none" class="page-content">
       <div class = "row" style="display:table; margin:0 auto; padding-top:15px;">
         {% if page.title == home %}
         <div class="well frontpagewell" style="width:742px; ">

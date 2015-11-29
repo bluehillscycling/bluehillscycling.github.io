@@ -19,5 +19,7 @@ tp_host: 'ftp.bluehillscycling.com'
 ftp_dir: 'public_html/BHCC-4'
 ftp_passive: true
 
+
+gems: [jekyll-paginate]
 # optional
 #ftp_port: 21                  # default 21
