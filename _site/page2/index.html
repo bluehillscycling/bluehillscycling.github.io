@@ -41,6 +41,14 @@
 
   <body   data-current-page="home">
 <style>
+
+body { 
+  background: url(/images/adams.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 video{
 
   position: fixed;
@@ -60,22 +68,25 @@ video{
 
 .frontpagewell{
 
-background-color: rgba(255, 255, 255, 0.44);
+background-color: rgba(245, 245, 245, 0.89);
     border: none;
 
 }
 
 </style>
 <script>
+
   
  $(window).load(function () {
  
      $(".page-content").show();
+
+     $("#bg-video").show();
 });
 </script>
 
 
-<video poster="/images/adams.png"  autoplay loop>
+<video style = "display:none" id ="bg-video" autoplay loop>
   <source src="/video/adams.mp4" type="video/mp4">
 </video> 
 
@@ -157,7 +168,6 @@ background-color: rgba(255, 255, 255, 0.44);
   <div class="content">
     <p>Micheal Connelly, Jeff Bradley, Helen Mau and Dave Levy completed another Best Buddies Challenge!</p>
 
-<p><a href="/images/blog/best_buddies.jpg"><img class="alignnone size-full wp-image-684" alt="Best Buddies" src="/images/blog/best_buddies.jpg" /></a></p>
 
   </div>
 
@@ -169,7 +179,6 @@ background-color: rgba(255, 255, 255, 0.44);
     <p>Congratulations to Grayson Ford and Mike Morse for getting on the Podium at the Weeping Willow Mountain Bike Race. Weeping Willow is the second stop of the Kenda Cup East series.</p>
 <p><a href="/images/blog/gford.jpg"><img class="alignnone size-full wp-image-684" alt="Willow" src="/images/blog/gford.jpg" /></a></p>
 
-<p><a href="/images/blog/m-morse.png"><img class="alignnone size-full wp-image-684" alt="Willow" src="/images/blog/m-morse.png" /></a></p>
 
   </div>
 

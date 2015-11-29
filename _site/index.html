@@ -41,6 +41,14 @@
 
   <body   data-current-page="home">
 <style>
+
+body { 
+  background: url(/images/adams.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 video{
 
   position: fixed;
@@ -60,22 +68,25 @@ video{
 
 .frontpagewell{
 
-background-color: rgba(255, 255, 255, 0.44);
+background-color: rgba(245, 245, 245, 0.89);
     border: none;
 
 }
 
 </style>
 <script>
+
   
  $(window).load(function () {
  
      $(".page-content").show();
+
+     $("#bg-video").show();
 });
 </script>
 
 
-<video poster="/images/adams.png"  autoplay loop>
+<video style = "display:none" id ="bg-video" autoplay loop>
   <source src="/video/adams.mp4" type="video/mp4">
 </video> 
 
@@ -158,11 +169,6 @@ background-color: rgba(255, 255, 255, 0.44);
     
 <p>The Blue Hills MTB Squad Headed to New Hampshire this past weekend to tackle the 100K Race</p>
 
-<p><a href="/images/blog/h100-gang.jpg"><img class="alignnone size-full wp-image-684" alt="Hampshire 100" src="/images/blog/h100-gang.jpg" /></a></p>
-
-<p><a href="/images/blog/post100.jpg"><img class="alignnone size-full wp-image-684" alt="Hampshire 100" src="/images/blog/post100.jpg" /></a></p>
-
-<p><a href="/images/blog/freighttrain.jpg"><img class="alignnone size-full wp-image-684" alt="Hampshire 100" src="/images/blog/freighttrain.jpg" /></a></p>
 
   </div>
 
@@ -185,7 +191,6 @@ background-color: rgba(255, 255, 255, 0.44);
     
 <p>Thanks to all who volunteered and participated at last week's Boston Rebellion/ Barn Burner.  It was a great weekend of racing and an amazing event.  Checkout the Highlights Video from dirtwire.tv </p>
 
-<iframe width="500" height="315" src="https://www.youtube.com/embed/Iy8PU1AQk1Y" frameborder="0" allowfullscreen=""></iframe>
 
   </div>
 

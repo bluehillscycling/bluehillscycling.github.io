@@ -41,6 +41,14 @@
 
   <body   data-current-page="home">
 <style>
+
+body { 
+  background: url(/images/adams.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 video{
 
   position: fixed;
@@ -60,22 +68,25 @@ video{
 
 .frontpagewell{
 
-background-color: rgba(255, 255, 255, 0.44);
+background-color: rgba(245, 245, 245, 0.89);
     border: none;
 
 }
 
 </style>
 <script>
+
   
  $(window).load(function () {
  
      $(".page-content").show();
+
+     $("#bg-video").show();
 });
 </script>
 
 
-<video poster="/images/adams.png"  autoplay loop>
+<video style = "display:none" id ="bg-video" autoplay loop>
   <source src="/video/adams.mp4" type="video/mp4">
 </video> 
 
@@ -157,23 +168,6 @@ background-color: rgba(255, 255, 255, 0.44);
   <div class="content">
     <p><strong>Do you think you have what it takes to be King of the Blue Hills?</strong></p>
 
-<table><tr><td style="width:155px">
-
-<a href="/images/uploads/2014/02/king.jpg"><img src="/images/uploads/2014/02/king-150x150.jpg" alt="king" width="150" height="150" class="alignnone size-thumbnail wp-image-182" /></a>
-
-</td><td><p style="padding-left:3px">This year we will be tracking club member’s efforts on your favorite road and dirt segments in and around the Blue Hills in order to find out who is truly the King and/or Queen of the Blue Hills. We will be tracking the dirt climbs in a separate competition</p> 
-
-<p>For this competition we will only be looking at efforts completed in 2014, more specifically March through October. </p>
-
- </td></tr>
-
-</table>
-
-<p style="padding-top:5px">
-
-Each segment will be weighted based on difficulty and points will be awarded to each of the top ten times for each segment.  The person with the most points wins. We are still evaluating the segments, expect this to be locked in by March 1st.  For complete contest rules and eligibility click on the King of the Blue Hills tab above. The King of the Blue Hills competition is only open to current members of the blue hills cycling club.  To Join the fun, please Join the Blue Hills Cycling Club by clicking on the link below. New members are always welcome!</p>
-<p><a href="https://www.bikereg.com/Net/21860" target="_blank"><img src="/images/bikereg.gif" alt="Join" /></a></p>
-
 
   </div>
 
@@ -196,11 +190,6 @@ Each segment will be weighted based on difficulty and points will be awarded to 
   <div class="content">
     <p>2014 club membership is now open on <a href="https://www.bikereg.com/Net/blue-hills-cycling-club-membership" title="Bikereg." target="_blank">Bikereg </a></p>
 
-<p>We are working on a some great new programs for the club and have added a racer incentive program. 
-
-
-
-Also, a short track series is coming to Adams Farm. Click on "Our Races" for more info. </p>
 
   </div>
 
