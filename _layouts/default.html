@@ -1,46 +1,34 @@
 <!DOCTYPE html>
 <html  ng-app="bhccAPP" >
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body  {% if page.id %} data-current-page="{{ page.id }}"{% endif %}>
-<style>
-
+<body  {% if page.id %} data-current-page="{{ page.id }}"{% endif %}>
 
 
-</style>
-<script>
+  {% if page.title == home %}
 
+  <video style = "display:none" id ="bg-video" autoplay loop>
+    <source src="/video/adams.mp4" type="video/mp4">
+  </video> 
+
+  {% endif %}
   
- $(window).load(function () {
- 
-     $(".page-content").show();
-
-     $("#bg-video").show();
-});
-</script>
-
-{% if page.title == home %}
-<video style = "display:none" id ="bg-video" autoplay loop>
-  <source src="/video/adams.mp4" type="video/mp4">
-</video> 
-
-{% endif %}
-    {% include header.html %}
+  {% include header.html %}
 
     <div style="display:none" class="page-content">
       <div class = "row" style="display:table; margin:0 auto; padding-top:15px;">
         {% if page.title == home %}
         <div class="well frontpagewell" style="width:742px; ">
-        {% else %}
-        <div class="well" style="width:742px; ">
-        {% endif %}  
-     <!-- <div class="wrapper">-->
-        {{ content }}
+          {% else %}
+          <div class="well" style="width:742px; ">
+            {% endif %}  
+            <!-- <div class="wrapper">-->
+            {{ content }}
+          </div>
         </div>
       </div>
-    </div>
-    {% include footer.html %}
-  </body>
+      {% include footer.html %}
+    </body>
 
-</html>
+    </html>

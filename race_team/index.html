@@ -20,23 +20,23 @@ title: "Race Team Directors"
     <div ng-repeat = "director_data in data" ng-show= "$index < 3" class ="span3" style=" margin-left:0; padding-left:5px;text-align:center ">
         <h4 style="font-size:14px">[[director_data.title_short]]</h4>
     </div>
+</div>
+<div class = "row" style ="display: table; margin:0 auto;  padding-top:5px" >
+  <div ng-repeat = "director_data in data" ng-show= "$index < 3" class ="span3" style=" margin-left:0; padding-left:5px;text-align:center ">
+      <h4 style="font-size:14px"> <a href ="[[director_data.email]]" target="_top">[[director_data.name]]</a></h4>
   </div>
-  <div class = "row" style ="display: table; margin:0 auto;  padding-top:5px" >
-      <div ng-repeat = "director_data in data" ng-show= "$index < 3" class ="span3" style=" margin-left:0; padding-left:5px;text-align:center ">
-          <h4 style="font-size:14px"> <a href ="[[director_data.email]]" target="_top">[[director_data.name]]</a></h4>
-      </div>
-  </div>
-    <!-- Team Riders -->
+</div>
+<!-- Team Riders -->
 
-    <H2 style= " font-family: Tahoma, Verdana, Segoe, sans-serif; padding-top:10px; font-size: 24px;">Team Riders</H2>
+<H2 style= " font-family: Tahoma, Verdana, Segoe, sans-serif; padding-top:10px; font-size: 24px;">Team Riders</H2>
 
-    <div  class = "row" id="team-riders" style ="display: table; margin:0 auto;  padding-top:15px" >
-            <div ng-repeat ="rider_data in data" class ="span2" style=" margin-left:0; padding-right:5px;">
-                <a ng-show="$index > 2" href ng-click ="show([[$index]])"><img  style="display: block; margin-left: auto; margin-right: auto;" src="[[rider_data.thumbnail]]" alt="[[rider_data.name]]"></a>
-                <h4 ng-show="$index > 2"style="font-size:14px; margin-left:0; padding-left:5px; text-align:center ">[[rider_data.name]]</h4>
-            </div>
+<div  class = "row" id="team-riders" style ="display: table; margin:0 auto;  padding-top:15px" >
+    <div ng-repeat ="rider_data in data" class ="span2" style=" margin-left:0; padding-right:5px;">
+        <a ng-show="$index > 2" href ng-click ="show([[$index]])"><img  style="display: block; margin-left: auto; margin-right: auto;" src="[[rider_data.thumbnail]]" alt="[[rider_data.name]]"></a>
+        <h4 ng-show="$index > 2"style="font-size:14px; margin-left:0; padding-left:5px; text-align:center ">[[rider_data.name]]</h4>
     </div>
-    <div ng-repeat="rider_data in data">
+</div>
+<div ng-repeat="rider_data in data">
     <div  class="modal fade rider-modal" id = "[['rider-modal-' + $index]]" style ="background-image:url(/images/race_team/access_road.jpg); height:600px;  width:600px; margin-left: -300px;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 
         <div class="modal-header" >
@@ -49,108 +49,108 @@ title: "Race Team Directors"
                 <div class ="span1"><img  src="/images/race_team/jersey.png"/></div>
                 <div class ="span1" style="width:20px;">
                     <button type="button" class="close" aria-hidden="true" data-dismiss="modal" ng-click="close('Cancel')">x</button></div>
+                </div>
+            </div>
+
+
+            <!-- Modal  Body Begin  -->
+
+            <div class="modal-body" style="max-height: 500px;">
+                <div class = "row" >
+                    <div class ="span4">
+                        <img src="[[rider_data.mainimage]]" class="rider-image" />
+                    </div>
+                    <div class ="span3" style ="padding-left:5px;">
+                        <div class = "row" >
+                            <div class ="span3"><h4 style="font-size:14px"><u>Race Disciplines</u></h4></div>
+                        </div>
+                        <div class = "row" style="padding-top:10px">
+                            <div class ="span1"><h4 style="font-size:14px">Age:</h4></div>
+                            <div class ="span2" style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">[[rider_data.age]]</div>
+                        </div>
+                        <div class = "row" style="padding-top:10px">
+                            <div class ="span1"><h4 style="font-size:14px" id="race-discipline1">MTB:</h4></div>
+                            <div class ="span2" id="race-discipline1Cat" style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">[[rider_data.mtb]]</div>
+                        </div>
+                        <div class = "row" style="padding-top:10px" >
+                            <div class ="span1"><h4 style="font-size:14px" id="race-discipline2">CX:</h4></div>
+                            <div class ="span2" id = "race-discipline2Cat" style= " font-family: Tahoma, Verdana, Segoe, sans-serif;" >[[rider_data.cx]]</div>
+                        </div>
+                        <div class = "row" style="padding-top:10px" >
+                            <div class ="span1"><h4 style="font-size:14px" id="race-discipline3">Road:</h4></div>
+                            <div class ="span2" id = "race-discipline3Cat" style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">[[rider_data.road]]</div>
+                        </div>
+                        <div class ="row">
+                            <div class ="span3" style=" padding-top:5px;"><h4 style="font-size:14px" style="font-size:14px"><u>Bikes</u></h4></div>
+                        </div>
+                        <div class = "row" style="padding-top:5px">
+                            <div class ="span1" ><h4 style="font-size:14px" id = "bike-type-1">MTB:</h4></div>
+                            <div class ="span2" id ="bike-1" style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">[[rider_data.mountain_bike]]</div>
+                        </div>
+                        <div class = "row" style="padding-top:5px">
+                            <div class ="span1" ><h4 style="font-size:14px" id = "bike-type-2">CX:</h4></div>
+                            <div class ="span2" id ="bike-2" style="font-family: Tahoma, Verdana, Segoe, sans-serif;">[[rider_data.cross_bike]]</div>
+                        </div>
+                        <div class = "row" style="padding-top:5px">
+                            <div class ="span1"><h4 style="font-size:14px" id = "bike-type-3" >Road:</h4></div>
+                            <div class ="span2" id ="bike-3" style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">[[rider_data.road_bike]]</div>
+                        </div>
+                        <div class = "row" style="padding-top:10px" >
+                            <div class ="span3"><h4 style="font-size:14px" style="font-size:14px"><u>Favorites:</u></h4></div>
+                        </div>
+                        <div class = "row" style="padding-top:10px">
+                            <div class ="span1"><h4 style="font-size:14px" style="font-size:14px">Race:</h4></div>
+                            <div class ="span2" id ="rider-favorite-race">[[rider_data.favorite_race]]</div>
+                        </div>
+                        <div class = "row" style="padding-top:10px">
+                            <div class ="span3" style= "padding-top:5px;"><h4 style="font-size:14px" style="font-size:14px"><u>Personal Note:</u></h4></div>
+                            <div class ="span3" style="padding-top:5px; font-family: Tahoma, Verdana, Segoe, sans-serif;" id="rider-personal-note" >[[rider_data.personal_note]]</div>
+                        </div>
+                        <div class = "row" style="padding-top:10px">
+                            <div class ="span2" style= "font-family: Tahoma, Verdana, Segoe, sans-serif;"><h5 id ="plugs" ></h5></div>
+                        </div>
+
+
+                    </div>
+                    <!-- End of Modal Body -->
+                </div>
+                <!-- End of Modal -->
             </div>
         </div>
-
-
-        <!-- Modal  Body Begin  -->
-
-        <div class="modal-body" style="max-height: 500px;">
-            <div class = "row" >
-                <div class ="span4">
-                    <img src="[[rider_data.mainimage]]" class="rider-image" />
-                </div>
-                <div class ="span3" style ="padding-left:5px;">
-                    <div class = "row" >
-                        <div class ="span3"><h4 style="font-size:14px"><u>Race Disciplines</u></h4></div>
-                    </div>
-                    <div class = "row" style="padding-top:10px">
-                        <div class ="span1"><h4 style="font-size:14px">Age:</h4></div>
-                        <div class ="span2" style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">[[rider_data.age]]</div>
-                    </div>
-                    <div class = "row" style="padding-top:10px">
-                        <div class ="span1"><h4 style="font-size:14px" id="race-discipline1">MTB:</h4></div>
-                        <div class ="span2" id="race-discipline1Cat" style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">[[rider_data.mtb]]</div>
-                    </div>
-                    <div class = "row" style="padding-top:10px" >
-                        <div class ="span1"><h4 style="font-size:14px" id="race-discipline2">CX:</h4></div>
-                        <div class ="span2" id = "race-discipline2Cat" style= " font-family: Tahoma, Verdana, Segoe, sans-serif;" >[[rider_data.cx]]</div>
-                    </div>
-                    <div class = "row" style="padding-top:10px" >
-                        <div class ="span1"><h4 style="font-size:14px" id="race-discipline3">Road:</h4></div>
-                        <div class ="span2" id = "race-discipline3Cat" style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">[[rider_data.road]]</div>
-                    </div>
-                    <div class ="row">
-                        <div class ="span3" style=" padding-top:5px;"><h4 style="font-size:14px" style="font-size:14px"><u>Bikes</u></h4></div>
-                    </div>
-                    <div class = "row" style="padding-top:5px">
-                        <div class ="span1" ><h4 style="font-size:14px" id = "bike-type-1">MTB:</h4></div>
-                        <div class ="span2" id ="bike-1" style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">[[rider_data.mountain_bike]]</div>
-                    </div>
-                    <div class = "row" style="padding-top:5px">
-                        <div class ="span1" ><h4 style="font-size:14px" id = "bike-type-2">CX:</h4></div>
-                        <div class ="span2" id ="bike-2" style="font-family: Tahoma, Verdana, Segoe, sans-serif;">[[rider_data.cross_bike]]</div>
-                    </div>
-                    <div class = "row" style="padding-top:5px">
-                        <div class ="span1"><h4 style="font-size:14px" id = "bike-type-3" >Road:</h4></div>
-                        <div class ="span2" id ="bike-3" style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">[[rider_data.road_bike]]</div>
-                    </div>
-                    <div class = "row" style="padding-top:10px" >
-                        <div class ="span3"><h4 style="font-size:14px" style="font-size:14px"><u>Favorites:</u></h4></div>
-                    </div>
-                    <div class = "row" style="padding-top:10px">
-                        <div class ="span1"><h4 style="font-size:14px" style="font-size:14px">Race:</h4></div>
-                        <div class ="span2" id ="rider-favorite-race">[[rider_data.favorite_race]]</div>
-                    </div>
-                    <div class = "row" style="padding-top:10px">
-                        <div class ="span3" style= "padding-top:5px;"><h4 style="font-size:14px" style="font-size:14px"><u>Personal Note:</u></h4></div>
-                        <div class ="span3" style="padding-top:5px; font-family: Tahoma, Verdana, Segoe, sans-serif;" id="rider-personal-note" >[[rider_data.personal_note]]</div>
-                    </div>
-                    <div class = "row" style="padding-top:10px">
-                        <div class ="span2" style= "font-family: Tahoma, Verdana, Segoe, sans-serif;"><h5 id ="plugs" ></h5></div>
-                    </div>
-
-
-                </div>
-                <!-- End of Modal Body -->
-            </div>
-            <!-- End of Modal -->
-        </div>
-    </div>
     </div>
 
 
 
 
 </div>
-           
-                    <!-- Team Riders End-->
-    <H3 style= " font-family: Tahoma, Verdana, Segoe, sans-serif; padding-top:15px; font-size:24px">Race Team</H3><p style="font-family: Tahoma, Verdana, Segoe, sans-serif; color:#0D355D; padding-top:10px;">The mission of our race development program and racing team is to promote Blue Hills Cycling Club, as well as our sponsors, through individual and team participation in competitive cycling events around New England and beyond.  Our goal is to provide Club members the opportunity to improve their racing skills, vigorously challenge themselves, and represent BHCC within the bicycle racing community.</p>
 
-    <p style="font-family: Tahoma, Verdana, Segoe, sans-serif; color:#0D355D; ">The BHCC Race Team is open to all racers, from first timers to experienced veterans. Our race teams are constantly growing across all disciplines. BHCC currently has a large group of members competing in nearly every level of every event in New England</p>
+<!-- Team Riders End-->
+<H3 style= " font-family: Tahoma, Verdana, Segoe, sans-serif; padding-top:15px; font-size:24px">Race Team</H3><p style="font-family: Tahoma, Verdana, Segoe, sans-serif; color:#0D355D; padding-top:10px;">The mission of our race development program and racing team is to promote Blue Hills Cycling Club, as well as our sponsors, through individual and team participation in competitive cycling events around New England and beyond.  Our goal is to provide Club members the opportunity to improve their racing skills, vigorously challenge themselves, and represent BHCC within the bicycle racing community.</p>
 
-    <H3 style= "font-size: 24px;font-family: Tahoma, Verdana, Segoe, sans-serif;">Benefits</H3>
+<p style="font-family: Tahoma, Verdana, Segoe, sans-serif; color:#0D355D; ">The BHCC Race Team is open to all racers, from first timers to experienced veterans. Our race teams are constantly growing across all disciplines. BHCC currently has a large group of members competing in nearly every level of every event in New England</p>
 
-    <ul>
-		<li style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">The Club will pick up all race entry fees after 7 Races annually up to $35 per race</li>
-        <li style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">Training Races Do not Count</li>
-        <li style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">Generous discount at Landry's Bicycles</li>
-		<li style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">Club Orgainized Race Training Rides</li>
-	</ul>
+<H3 style= "font-size: 24px;font-family: Tahoma, Verdana, Segoe, sans-serif;">Benefits</H3>
 
-    <H3 style= " font-family: Tahoma, Verdana, Segoe, sans-serif; font-size:24px;">Requirements for race fee reimbursment</H3>
+<ul>
+  <li style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">The Club will pick up all race entry fees after 7 Races annually up to $35 per race</li>
+  <li style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">Training Races Do not Count</li>
+  <li style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">Generous discount at Landry's Bicycles</li>
+  <li style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">Club Orgainized Race Training Rides</li>
+</ul>
 
-    <ul>
-		<li style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">Must be a current member of the Blue Hills Cycling Club</li>
-        <li style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">Must Volunteer two days at our events(ProXCT/BarnBurner, MT Blue Criterium, CX race)</li>
-        <li style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">Race in a Current Blue Hills Cycling Club Kit</li>
-        <li style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">Race Registration Must have "Blue Hills Cycling Club" listed as your Team/Club (not BHCC) </li>
-	</ul>
+<H3 style= " font-family: Tahoma, Verdana, Segoe, sans-serif; font-size:24px;">Requirements for race fee reimbursment</H3>
 
-
+<ul>
+  <li style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">Must be a current member of the Blue Hills Cycling Club</li>
+  <li style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">Must Volunteer two days at our events(ProXCT/BarnBurner, MT Blue Criterium, CX race)</li>
+  <li style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">Race in a Current Blue Hills Cycling Club Kit</li>
+  <li style= " font-family: Tahoma, Verdana, Segoe, sans-serif;">Race Registration Must have "Blue Hills Cycling Club" listed as your Team/Club (not BHCC) </li>
+</ul>
 
 
-    <!-- Modal Begin  -->
+
+
+<!-- Modal Begin  -->
 
 
 
