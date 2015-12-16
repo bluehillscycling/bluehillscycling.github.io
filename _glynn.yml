@@ -1,9 +1,0 @@
-ftp_host: 'ftp.bluehillscycling.com'
-ftp_dir: '/home4/bluehil1/public_html'
-ftp_passive: false
-
-# optional
-ftp_port: 21                  # default 21
-ftp_username: 'glynn@bluehillscycling.com'     # default read from stdin
-ftp_password: 'JK:C(zvZOBby2' # default read from stdin
-ftp_secure: true              # default false
