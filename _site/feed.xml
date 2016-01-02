@@ -9,9 +9,26 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 16 Dec 2015 13:20:54 -0500</pubDate>
-    <lastBuildDate>Wed, 16 Dec 2015 13:20:54 -0500</lastBuildDate>
+    <pubDate>Sat, 02 Jan 2016 15:31:31 -0500</pubDate>
+    <lastBuildDate>Sat, 02 Jan 2016 15:31:31 -0500</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Happy New Years from BHCC!</title>
+        <description>&lt;p&gt;The Blue Hills Cycling Club kicked off 2016 with the annual 2 Day Training Camp. 3 Hours on the Road on January 1st, followed by 3 hours off road in the Blue Hills on January 2nd.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/NewYears 2016.jpg&quot; alt=&quot;Buck Hill&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sound like fun? Join the Clubs!&lt;/p&gt;
+
+&lt;!--more--&gt;
+</description>
+        <pubDate>Sat, 02 Jan 2016 00:00:00 -0500</pubDate>
+        <link>http://yourdomain.com/2016/01/02/Happy-New-Years.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2016/01/02/Happy-New-Years.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>2015 Hampshire 100</title>
@@ -133,19 +150,6 @@
         <pubDate>Mon, 20 Apr 2015 00:00:00 -0400</pubDate>
         <link>http://yourdomain.com/2015/04/20/boston-marathon.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2015/04/20/boston-marathon.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>2015 Paris-Roubaix Challenge</title>
-        <description>&lt;p&gt;&lt;a href=&quot;/images/blog/dylan_jp.jpg&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-684&quot; alt=&quot;noreastah&quot; src=&quot;/images/blog/dylan_jp.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Congratulations to JP and Dylan for battling through 104 miles of the 2015 Paris-Roubaix challenge including 30 miles of brutal cobbles!&lt;/p&gt;
-</description>
-        <pubDate>Sun, 12 Apr 2015 00:00:00 -0400</pubDate>
-        <link>http://yourdomain.com/2015/04/12/paris-roubaix-challenge.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2015/04/12/paris-roubaix-challenge.html</guid>
         
         
       </item>

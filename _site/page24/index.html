@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html  ng-app="bhccAPP" >
 
-  <head>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
@@ -39,59 +39,18 @@
 </head>
 
 
-  <body   data-current-page="home">
-<style>
+<body   data-current-page="home">
 
-body { 
-  background: url(/images/adams.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-video{
-
-  position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
- /*background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;*/
-  background-size: cover;
-  transition: 1s opacity;
-}
-
-
-.frontpagewell{
-
-background-color: rgba(245, 245, 245, 0.89);
-    border: none;
-
-}
-
-</style>
-<script>
 
   
- $(window).load(function () {
- 
-     $(".page-content").show();
 
-     $("#bg-video").show();
-});
-</script>
+  <video style = "display:none" id ="bg-video" autoplay loop>
+    <source src="/video/adams.mp4" type="video/mp4">
+  </video> 
 
-
-<video style = "display:none" id ="bg-video" autoplay loop>
-  <source src="/video/adams.mp4" type="video/mp4">
-</video> 
-
-
-    
+  
+  
+  
  <div style ="background-color:#333; height:35px; margin-top:85px;"></div>
     
  <div class = "row" style ="display: table; margin:0 auto; margin-top:-125px;">
@@ -153,9 +112,9 @@ background-color: rgba(245, 245, 245, 0.89);
       <div class = "row" style="display:table; margin:0 auto; padding-top:15px;">
         
         <div class="well frontpagewell" style="width:742px; ">
-          
-     <!-- <div class="wrapper">-->
-        <div class="home">
+            
+            <!-- <div class="wrapper">-->
+            <div class="home">
  
 <div class = "row">
   <div class = "span6" style="width:500px">
@@ -166,7 +125,15 @@ background-color: rgba(245, 245, 245, 0.89);
     <span class="date">2012-11-06 04:33:00 -0500</span>
   </p>
   <div class="content">
-    <p>Our new website will be up and running soon. Stay tuned for a guide to all the new features.</p>
+
+
+
+   <p>Our new website will be up and running soon. Stay tuned for a guide to all the new features.</p>
+
+
+
+
+
 
   </div>
 
@@ -218,6 +185,28 @@ background-color: rgba(245, 245, 245, 0.89);
     
     <div class="accordion-group">
     <div class="accordion-heading">
+      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#2016">
+        <h3>2016</h3>
+    </a>
+    
+      <div id="2016" class="accordion-body collapse">
+      <div class="accordion-inner"><ul class="unstyled">
+     
+  
+  
+
+    <li><a href="/2016/01/02/Happy-New-Years.html">Happy New Years from BHCC!</a></li>
+
+  
+  
+    </ul>
+        </div>
+    </div>
+    </div>
+</div>
+    
+    <div class="accordion-group">
+    <div class="accordion-heading">
       <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#2015">
         <h3>2015</h3>
     </a>
@@ -229,12 +218,6 @@ background-color: rgba(245, 245, 245, 0.89);
   
 
     <li><a href="/2015/08/19/Hampshire100.html">2015 Hampshire 100</a></li>
-
-  
-  
-  
-
-    <li><a href="/2015/08/19/Hampshire100-(copy).html">2015 Hampshire 100</a></li>
 
   
   
@@ -707,10 +690,10 @@ background-color: rgba(245, 245, 245, 0.89);
  
 
 
+          </div>
         </div>
       </div>
-    </div>
-    <footer class="site-footer">
+      <footer class="site-footer">
 
   <div class="wrapper">
 
@@ -741,6 +724,6 @@ background-color: rgba(245, 245, 245, 0.89);
 
 </footer>
 
-  </body>
+    </body>
 
-</html>
+    </html>
