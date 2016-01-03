@@ -9,6 +9,6 @@ The Blue Hills Cycling Club kicked off 2016 with the annual 2 Day Training Camp.
 
  ![Buck Hill](/images/blog/NewYears 2016.jpg)
 
-Sound like fun? Join the Clubs!
+Sound like fun? Join the Club today!
 
 <!--more-->
