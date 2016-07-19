@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blue Hills Triathalon Club"
+title: "Blue Hills Triathlon Club"
 description: ""
 category: 
 tags: []
