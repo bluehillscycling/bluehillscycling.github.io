@@ -3,7 +3,7 @@
    $(window).load(function () {
    
        $(".page-content").show();
-       $("#bg-video").show();
+      // $("#bg-video").show();
 
        
   });
