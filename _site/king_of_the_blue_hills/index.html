@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  ng-app="bhccAPP" >
+<html  ng-app="bhccApp" >
 
 <head>
   <meta charset="utf-8">
@@ -14,7 +14,6 @@
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-
   <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css"/>
   <link href="/bootstrap/css/bhcc.css" rel="stylesheet">
 
@@ -23,13 +22,13 @@
   <link rel="alternate" type="application/atom+xml" title="Blue Hills Cycling Club" href="http://yourdomain.com/feed.xml" />
   
   <link rel="stylesheet" type="text/css" href="/bootstrap/css/bhcc.css"/>
-  <script src="/bootstrap/js/jquery.js"></script>
-
-  <script src="/bootstrap/js/bootstrap.min.js"></script>
-
+  <!--<script src="/bootstrap/js/jquery.js"></script>-->
+  <!--<script src="/bootstrap/js/bootstrap.min.js"></script>-->
   <script src="/bootstrap/js/main.js"></script>
-  
-
+  <script src="/node_modules/angular/angular.min.js"></script>
+  <script src="/node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+  <script src="/Javascript/app.js"></script>
+  <script src="/Javascript/controller.js"></script>
 
 </head>
 
@@ -79,23 +78,11 @@
      
 
 
-<!--<div style ="padding-top:15px">     
-    <div class = "row" style ="display:table; margin:0 auto;">
-        <div class = "span10">
-         <div class="alert alert-success">
-           <button type="button" class="close" data-dismiss="alert">&times;</button>
-           <h2>Get Ready for Next Year!</h2>
-           <p style="padding-top:10px;">Thank you for participating in the 2014 King of the Blue Hills competition!  The competition will return in 2015, stay tuned for details!</p>
-         </div>
-       </div>
-     </div>
-     </div>-->
-  
 
      
 
 
-    <div style="display:none" class="page-content">
+    <div  class="page-content">
       <div class = "row" style="display:table; margin:0 auto; padding-top:15px;">
         
           <div class="well" style="width:742px; ">

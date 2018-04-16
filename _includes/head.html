@@ -7,7 +7,6 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-
   <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css"/>
   <link href="/bootstrap/css/bhcc.css" rel="stylesheet">
 
@@ -16,12 +15,12 @@
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
   
   <link rel="stylesheet" type="text/css" href="/bootstrap/css/bhcc.css"/>
-  <script src="/bootstrap/js/jquery.js"></script>
-
-  <script src="/bootstrap/js/bootstrap.min.js"></script>
-
+  <!--<script src="/bootstrap/js/jquery.js"></script>-->
+  <!--<script src="/bootstrap/js/bootstrap.min.js"></script>-->
   <script src="/bootstrap/js/main.js"></script>
-  
-
+  <script src="/node_modules/angular/angular.min.js"></script>
+  <script src="/node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+  <script src="/Javascript/app.js"></script>
+  <script src="/Javascript/controller.js"></script>
 
 </head>

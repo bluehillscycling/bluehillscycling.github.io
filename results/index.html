@@ -1,0 +1,56 @@
+---
+layout: page
+description: ""
+title: "Results"
+page-banner: "group_rides.jpg"
+name: club_rides
+---
+{% include JB/setup %}
+
+<div ng-controller="StravaController">
+
+        <div ng-repeat="data in StravaData.segment_data">
+
+            <h1>[[data.segment_name]]</h1>
+            <table class="table table-condensed">
+                <tr>
+                    <th>Name</th>
+                    <th>Rank</th>
+                    <th>time</th>
+                </tr>
+                <tr ng-repeat="entry in data.male_data.entries">
+                    <td>[[entry.athlete_name]]</td>
+                    <td>[[entry.rank]]</td>
+                    <td>[[entry.elapsed_time | secondsToDateTime | date:'HH:mm:ss']]</td>
+                    <td>[[data.Elevation]]</td>
+                </tr>
+            </table>
+
+        </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
