@@ -68,13 +68,8 @@
       </div>
 
       
-      <div style ="padding-top:15px">     
-        <div class = "row" style ="display:table; margin:0 auto;">
-            <div style="width:780px;">
-                <img src='/images/group_rides.jpg'alt="Race Team" />
-            </div>
-        </div>
-    </div>
+
+
      
 
 
@@ -99,30 +94,56 @@
     
 
 <div ng-controller="StravaController">
-
-        <div ng-repeat="data in StravaData.segment_data">
-
-            <h1>[[data.segment_name]]</h1>
-            <table class="table table-condensed">
-                <tr>
-                    <th>Name</th>
-                    <th>Rank</th>
-                    <th>time</th>
-                </tr>
-                <tr ng-repeat="entry in data.male_data.entries">
-                    <td>[[entry.athlete_name]]</td>
-                    <td>[[entry.rank]]</td>
-                    <td>[[entry.elapsed_time | secondsToDateTime | date:'HH:mm:ss']]</td>
-                    <td>[[data.Elevation]]</td>
-                </tr>
-            </table>
-
+        <div class="row" style="height:150px;overflow-y: scroll">
+                <div class="span3">
+                    <h4>Mens Points</a></h4>
+                    <table class="table table-condensed table-responsive">
+                        <tr>
+                            <th>Name</th>
+                            <th>Points</th>     
+                        </tr>
+                        <tr ng-repeat="entry in StravaData.segments_men | orderBy: '-points' ">
+                            <td>[[entry.name]]</td>
+                            <td>[[entry.points]]</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="span3">
+                        <h4>Womens Points</a></h4>
+                        <table class="table table-condensed table-responsive">
+                            <tr>
+                                <th>Name</th>
+                                <th>Points</th>     
+                            </tr>
+                            <tr ng-repeat="entry in StravaData.segments_women | orderBy: '-points' ">
+                                <td>[[entry.name]]</td>
+                                <td>[[entry.points]]</td>
+                            </tr>
+                        </table>
+                </div>
         </div>
-
+    <div class="row" style="margin-top:36px;">
+        <div ng-repeat="data in StravaData.segment_data">
+            <div class="span3">
+                <h4><a ng-href="[[data.url]]">[[data.segment_name]]</a></h4>
+                <table class="table table-condensed table-responsive">
+                    <tr>
+                        <th>Name</th>
+                        <th>Rank</th>
+                        <th>time</th>
+                    </tr>
+                    <tr ng-repeat="entry in data.male_data.entries" ng-if="entry.rank < 11">
+                        <td>[[entry.athlete_name]]</td>
+                        <td>[[entry.rank]]</td>
+                        <td>[[entry.elapsed_time | secondsToDateTime | date:'HH:mm:ss']]</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+   
 </div>
-
-
-
 
 
 
