@@ -23,9 +23,11 @@
   <script src="/Javascript/app.js"></script>
   <script src="/Javascript/controller.js"></script>
 
-{% include head.html %}
-{% if jekyll.environment == 'production' %}
-{% include analytics.html %}
-{% endif %}
+  {% if jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  
+  {% endif %}
+
+
 
 </head>
