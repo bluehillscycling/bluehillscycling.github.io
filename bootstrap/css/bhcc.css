@@ -1,6 +1,5 @@
 
 video{
-
   position: fixed;
     top: 50%;
     left: 50%;
@@ -34,32 +33,17 @@ body {
   		-o-background-size: cover;
   		background-size: cover;*/
 
-      	}
+				}
+				
+				
 
-h1, h2,h3,h4,h5,h6 p, li, ul{
+h1, h2,h3,h4,h5,h6 p, td{
 		color:#0D355D;font-family: 'Verdana', Geneva, sans-serif;
 			
 		}
 		
 
 
-h4 {
-  font-size: 8px;
-}
-
-p{
-
-font-size:14px
-
-
-}
-
-
-p, td {
-	font-family: Tahoma, Verdana, Segoe, sans-serif; color:#0D355D;
-	
-	
-	}
 .navlinks{
 		font-family: Tahoma, Verdana, Segoe, sans-serif;
 		font-size: 15px;
@@ -76,13 +60,7 @@ p, td {
 		padding-bottom:15px;*/
 		}
 		
-#bhccAboutBackground{
-			
-		background-color: #0D355D;
-		
-		/*margin: 0 auto;*/
 
-		}
 .caption {
 		
 		font-family: Tahoma, Verdana, Segoe, sans-serif;
@@ -92,7 +70,7 @@ p, td {
 }
 
 .caption-background{
-	
+
 		
 		height:25px;
   		position:absolute;

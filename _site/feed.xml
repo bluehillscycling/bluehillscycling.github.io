@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blue Hills Cycling Club</title>
+    <title>King of The Blue Hills</title>
     <description>Road Cycling, Mountain Biking and Cyclocross in the Greater Boston Area
  
  
@@ -9,9 +9,23 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 17 Apr 2018 10:24:14 -0400</pubDate>
-    <lastBuildDate>Tue, 17 Apr 2018 10:24:14 -0400</lastBuildDate>
+    <pubDate>Wed, 18 Apr 2018 07:05:59 -0400</pubDate>
+    <lastBuildDate>Wed, 18 Apr 2018 07:05:59 -0400</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>BHCC Sets Record for Number of Bathroom Stops</title>
+        <description>&lt;p&gt;This weekend while returning from the Rasputitsa Spring Classic, the members of the Blue Hills Cycling Club set a Record for the number of times they had to stop and pee. “It started with a few post race beers at the Publick House” racer Scott Taylor explained - “Before you know it we  stopped at two Dunkin Donuts, a Cumberland Farms, The New Hampshire State Liquor Store and one final moment of relief at Andy’s House”, Andy could not be reached for comment.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/rasputitsa.JPG&quot; alt=&quot;BHCC&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 23 Apr 2017 00:00:00 -0400</pubDate>
+        <link>http://yourdomain.com/2017/04/23/BHCC-Caravan.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2017/04/23/BHCC-Caravan.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Boston Rebellion Us Cup</title>
