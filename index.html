@@ -2,44 +2,78 @@
 layout: default
 page-banner: "home"
 id: home
+sitemap:
+    priority: 0.7
+    changefreq: 'weekly'
+    lastmod: 2018-04-18T12:49:30-05:00"
 ---
 <div class="home" >
-    <div class = "row">
-        <div class = "span6" style="width:500px">
-            <!-- This loops through the paginated posts -->
-            {% for post in paginator.posts %}
-            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            <div class="content">
-                {% if post.content contains '<!--more-->' %}
-                    {{ post.content | split:'<!--more-->' | first }}
-                {% else %}
-                    {{post.content}}
-                {% endif %}
-            </div>
-            {% endfor %}
-            <!-- Pagination links -->
-            <div class="pagination">
-                <ul>
-                    {% if paginator.previous_page %}
-                      <li><a href="{{ paginator.previous_page_path }}" class="previous">Previous</a></li>
+        <div class="row">
+            <div class="col-lg-2 col-xl-2"></div>
+            <div class = "col-lg-5 col-xl-5" >
+                <!-- This loops through the paginated posts -->
+                {% for post in paginator.posts %}
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <div class="content" style="margin-bottom:36px;">
+                    {% if post.content contains '<!--more-->' %}
+                        {{ post.content | split:'<!--more-->' | first }}
                     {% else %}
-                      <li><a>Previous</a></li>
+                        {{post.content}}
                     {% endif %}
-                      <li><a>Page: {{ paginator.page }} of {{ paginator.total_pages }}</a></li>
-                    {% if paginator.next_page %}
-                      <li><a href="{{ paginator.next_page_path }}" class="next">Next</a></li>
-                    {% else %}
-                      <li><a>>Next</a></li>
-                    {% endif %}
-                </ul>
+                </div>
+                    {% endfor %}
+                <!-- Pagination links -->
+                <div class="pagination">
+                    <ul>
+                        {% if paginator.previous_page %}
+                        <li><a href="{{ paginator.previous_page_path }}" class="previous">Previous</a></li>
+                        {% else %}
+                        <li><a>Previous</a></li>
+                        {% endif %}
+                        <li><a>Page: {{ paginator.page }} of {{ paginator.total_pages }}</a></li>
+                        {% if paginator.next_page %}
+                        <li><a class="next" href="{{ paginator.next_page_path }}" >Next</a></li>
+                        {% else %}
+                        <li><a>Next</a></li>
+                        {% endif %}
+                    </ul>
+                </div>  
+                <p class="rss-subscribe">subscribe<a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
             </div>
-            <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+            <div class = "col-lg-4 col-xl-4" ng-controller="StravaController">
+                    <h3><a href="/results">Click Here For Segment Details</a></h3>
+                    <div class="row">
+                            <div class="col-lg-4 col-xl-4">
+                                <h4>Mens Points</a></h4>
+                                <table class="table table-condensed table-responsive table-bordered">
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Points</th>     
+                                    </tr>
+                                    <tr ng-repeat="entry in StravaData.segments_men | orderBy: '-points' ">
+                                        <td>[[entry.name]]</td>
+                                        <td>[[entry.points]]</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-lg-4 col-xl-4">
+                                    <h4>Womens Points</a></h4>
+                                    <table class="table table-condensed table-responsive table-bordered">
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Points</th>     
+                                        </tr>
+                                        <tr ng-repeat="entry in StravaData.segments_women | orderBy: '-points' ">
+                                            <td>[[entry.name]]</td>
+                                            <td>[[entry.points]]</td>
+                                        </tr>
+                                    </table>
+                            </div>
+                    </div>
+            </div>
         </div>
-        <!--Sidebar-->
-        <div class="span1" style="width:150px;  margin-left:70px">         
-                <a href="http://www.bostonrebellion.com/ProXCT/ProXCT.html" ><img  src="/images/theburner.png" width = "100%"  alt="The Barn Burner"/></a>
-        </div>
-    </div>
+        
+      
 </div>
 
 

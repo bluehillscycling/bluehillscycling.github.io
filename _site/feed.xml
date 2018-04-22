@@ -2,43 +2,97 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>King of The Blue Hills</title>
-    <description>Road Cycling, Mountain Biking and Cyclocross in the Greater Boston Area
- 
- 
- 
-</description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 18 Apr 2018 07:15:01 -0400</pubDate>
-    <lastBuildDate>Wed, 18 Apr 2018 07:15:01 -0400</lastBuildDate>
+    <description>Road Cycling, Mountain Biking and Cyclocross in the Greater Boston Area</description>
+    <link>http://bluehillscycling.github.io/</link>
+    <atom:link href="http://bluehillscycling.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 22 Apr 2018 06:16:54 -0400</pubDate>
+    <lastBuildDate>Sun, 22 Apr 2018 06:16:54 -0400</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
-        <title>BHCC Sets Record for Number of Bathroom Stops</title>
-        <description>&lt;p&gt;This weekend while returning from the Rasputitsa Spring Classic, the members of the Blue Hills Cycling Club set a Record for the number of times they had to stop and pee. “It started with a few post race beers at the Publick House” racer Scott Taylor explained - “Before you know it we  stopped at two Dunkin Donuts, a Cumberland Farms, The New Hampshire State Liquor Store and one final moment of relief at Andy’s House”, Andy could not be reached for comment.&lt;/p&gt;
+        <title>Hold Fast Coaching Initiates Mandatory Navigation Training</title>
+        <description>&lt;div class=&quot;row&quot;&gt;    
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/rasputitsa.JPG&quot; alt=&quot;BHCC&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;col-xl-4 col-lg-4&quot;&gt;
+        &lt;img class=&quot;img-responsive&quot; src=&quot;/images/blog/land-nav.jpg&quot; /&gt;
+&lt;/div&gt;
+    &lt;div class=&quot;col-xl-8 col-lg-8&quot;&gt;
+        &lt;p&gt;
+            After this weekends navigational mishap at the Rasputitsa Gravel Grinder in East Burke, VT,  Hold Fast Coaching has announced that they will be adding bike race navigation as an option for all clients.
+
+            This instruction will include advanced topics in navigation such as &quot;How to identify a green arrow&quot;.
+        &lt;/p&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
 
 </description>
-        <pubDate>Sun, 23 Apr 2017 00:00:00 -0400</pubDate>
-        <link>http://yourdomain.com/2017/04/23/BHCC-Caravan.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2017/04/23/BHCC-Caravan.html</guid>
+        <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
+        <link>http://bluehillscycling.github.io/2018/04/21/land-nav.html</link>
+        <guid isPermaLink="true">http://bluehillscycling.github.io/2018/04/21/land-nav.html</guid>
+        
+        <category>Stava</category>
+        
+        <category>King of The Blue Hills</category>
         
         
       </item>
     
       <item>
-        <title>Boston Rebellion Us Cup</title>
-        <description>&lt;p&gt;Come out Check out the &lt;a href=&quot;http://www.bostonrebellion.com/ProXCT/ProXCT.html&quot;&gt;Boston Rebellion ProXCT&lt;/a&gt;   Mountain Bike Race at Adams Farm this Weekend!.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/rebellion.jpg&quot; alt=&quot;The Boston Rebellion&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Register &lt;a href=&quot;https://www.bikereg.com/rebellion&quot;&gt;Here&lt;/a&gt;. There is an event for Everyone. UCI Pro Men and Women MTB Racing is on Saturday as well as a 12K and 6K Trail Race (Running Race). Amateur MTB Racing and STXC will be on Sunday.&lt;/p&gt;
+        <title>King of the Blue Hills Returns</title>
+        <description>&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xl-8 col-lg-8&quot;&gt;
+        &lt;p&gt;
+            The King of the Blue Hills Competition is Back!
+        &lt;/p&gt;
+        &lt;p&gt;
+             We will be tracking club member personal records between January and October on the gnarliest climbs in and around the Blue Hills Reservation. Points will be awarded to the top 10 times and weighted based on the difficutly of the climb.
+        &lt;/p&gt;
+        &lt;p&gt;
+            Overall results will be tracked on this page. Individual Segment Achievements will be tracked &lt;a href=&quot;/results/&quot;&gt;here.&lt;/a&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-xl-4 col-lg-4&quot;&gt;
+        &lt;img class=&quot;img-responsive&quot; src=&quot;/images/observatory.jpg&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
 </description>
-        <pubDate>Fri, 01 Apr 2016 00:00:00 -0400</pubDate>
-        <link>http://yourdomain.com/2016/04/01/Boston-Rebellion.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2016/04/01/Boston-Rebellion.html</guid>
+        <pubDate>Tue, 17 Apr 2018 00:00:00 -0400</pubDate>
+        <link>http://bluehillscycling.github.io/2018/04/17/King-Returns.html</link>
+        <guid isPermaLink="true">http://bluehillscycling.github.io/2018/04/17/King-Returns.html</guid>
+        
+        <category>Stava</category>
+        
+        <category>King of The Blue Hills</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>BHCC Sets Record for Number of Bathroom Stops</title>
+        <description>&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xl-4 col-lg-4&quot;&gt;
+        &lt;img class=&quot;img-responsive&quot; src=&quot;/images/blog/rasputitsa.JPG&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-xl-8 col-lg-8&quot;&gt;
+       &lt;p&gt;
+            This weekend while returning from the Rasputitsa Spring Classic, the members of the Blue Hills Cycling Club set a Record for the number of times they had to stop and pee. 
+        &lt;/p&gt;
+        &lt;p&gt;
+            &quot;It started with a few post race beers at the Publick House&quot; racer Scott T. explained - &quot;Before you know it we stopped at two Dunkin Donuts, a Cumberland Farms, The New Hampshire State Liquor Store and one final moment of relief at Andy&#39;s House&quot;.
+        &lt;/p&gt;
+        &lt;p&gt;  
+            Andy could not be reached for comment.
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Sun, 23 Apr 2017 00:00:00 -0400</pubDate>
+        <link>http://bluehillscycling.github.io/2017/04/23/BHCC-Caravan.html</link>
+        <guid isPermaLink="true">http://bluehillscycling.github.io/2017/04/23/BHCC-Caravan.html</guid>
         
         
       </item>

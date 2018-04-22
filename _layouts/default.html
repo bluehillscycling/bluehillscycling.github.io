@@ -4,32 +4,33 @@
 {% include head.html %}
 
 <body  {% if page.id %} data-current-page="{{ page.id }}"{% endif %}>
-
-
-  {% if page.title == home %}
-<!--
-  <video style = "display:none" id ="bg-video" autoplay loop>
-    <source src="/video/adams.mp4" type="video/mp4">
-  </video> 
-
-  -->
-
-  {% endif %}
- 
   {% include header.html %}
-
-    <div  class="page-content">
-      <div class = "row" style="display:table; margin:0 auto; padding-top:15px;">
-        {% if page.title == home %}
-        <div class="well frontpagewell" style="width:742px; ">
-          {% else %}
-          <div class="well" style="width:742px; ">
-            {% endif %}  
-            <!-- <div class="wrapper">-->
-            {{ content }}
+  {% if page.id == "home"%}
+  <div style="background:#15426d; margin-top:0px;">
+      <div class = "row"  >
+          <div class="col-lg-2 col-xl-2 col-md-2 col-sm-2"></div>
+          <div class="col-lg-2 col-xl-2 col-md-2 col-sm-2 col-xs-4" style="padding-bottom:24px;">
+              <img class="img-responsive"  src="/images/king.png"/>
           </div>
-        </div>
+          <div class="col-lg-2 col-xl-2 col-md-2 col-sm-2 col-xs-4" style="padding-bottom:24px;">
+                  <img class="img-responsive" src="/images/real.png"/>
+          </div>
+          <div class="col-lg-2 col-xl-2 col-md-2 col-sm-2 col-xs-4" style="padding-bottom:24px;">
+                  <img class="img-responsive" src="/images/results.png"/>
+          </div>
+          <div class="col-lg-2 col-xl-2 col-md-2 col-sm-2 col-xs-4" style="padding-bottom:24px;">
+                  <img class="img-responsive" src="/images/smoked.png"/>
+          </div>
       </div>
+</div>
+{% endif %}
+    <div  class="page-content">
+
+            {{ content }}
+          
+    </div>
+
+ 
       {% include footer.html %}
     </body>
 

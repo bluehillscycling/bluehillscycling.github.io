@@ -3,6 +3,10 @@ layout: page
 description: ""
 title: "The Rules"
 name: The Rules
+sitemap:
+    priority: 0.7
+    changefreq: 'monthly'
+    lastmod: 2018-04-18T12:49:30-05:00"
 ---
 {% include JB/setup %}
 

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+    <url>
+      <loc>http://bluehillscycling.github.io/2018/04/21/land-nav.html</loc>
+      
+        <lastmod>2018-04-21T00:00:00-04:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>http://bluehillscycling.github.io/2018/04/17/King-Returns.html</loc>
+      
+        <lastmod>2018-04-17T00:00:00-04:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>http://bluehillscycling.github.io/2017/04/23/BHCC-Caravan.html</loc>
+      
+        <lastmod>2017-04-23T00:00:00-04:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+  
+    
+  
+    
+      <url>
+        <loc>http://bluehillscycling.github.io/results/</loc>
+        <lastmod>2018-04-18T13:49:30-04:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+       </url>
+    
+  
+    
+      <url>
+        <loc>http://bluehillscycling.github.io/</loc>
+        <lastmod>2018-04-18T13:49:30-04:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+       </url>
+    
+  
+    
+      <url>
+        <loc>http://bluehillscycling.github.io/king_of_the_blue_hills/</loc>
+        <lastmod>2018-04-18T13:49:30-04:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+       </url>
+    
+  
+    
+      <url>
+        <loc>http://bluehillscycling.github.io/rules/</loc>
+        <lastmod>2018-04-18T13:49:30-04:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+       </url>
+    
+  
+    
+  
+    
+  
+</urlset>

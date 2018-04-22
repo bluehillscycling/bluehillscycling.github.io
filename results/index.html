@@ -3,12 +3,17 @@ layout: page
 description: ""
 title: "Results"
 name: Results
+sitemap:
+    priority: 0.7
+    changefreq: 'monthly'
+    lastmod: 2018-04-18T12:49:30-05:00"
 ---
 {% include JB/setup %}
 
+
 <div ng-controller="StravaController">
         <div class="row" style="height:150px;overflow-y: scroll">
-                <div class="span3">
+                <div class="col-lg-3 col-xl-3">
                     <h4>Mens Points</a></h4>
                     <table class="table table-condensed table-responsive">
                         <tr>
@@ -21,7 +26,7 @@ name: Results
                         </tr>
                     </table>
                 </div>
-                <div class="span3">
+                <div class="col-lg-3 col-xl-3">
                         <h4>Womens Points</a></h4>
                         <table class="table table-condensed table-responsive">
                             <tr>
@@ -37,7 +42,7 @@ name: Results
         </div>
     <div class="row" style="margin-top:36px;">
         <div ng-repeat="data in StravaData.segment_data">
-            <div class="span3">
+            <div class="col-lg-3 col-xl-3">
                 <h4><a ng-href="[[data.url]]">[[data.segment_name]]</a></h4>
                 <table class="table table-condensed table-responsive">
                     <tr>

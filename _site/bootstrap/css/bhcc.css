@@ -21,6 +21,15 @@ background-color: rgba(245, 245, 245, 0.89);
 
 }
 
+.navbar {
+
+	background: #15426D;
+	border:none;
+	margin-bottom:0px !important;
+	border-radius: 0px !important;
+
+}
+
 
 
 body {
