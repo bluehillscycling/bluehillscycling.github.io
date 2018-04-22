@@ -6,7 +6,7 @@ category:
 tags: []
 ---
 <div class="row">
-    <div class="col-xl-4 col-lg-4">
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-xs-5">
         <img class="img-responsive" src="/images/blog/rasputitsa.JPG"/>
     </div>
     <div class="col-xl-8 col-lg-8">
