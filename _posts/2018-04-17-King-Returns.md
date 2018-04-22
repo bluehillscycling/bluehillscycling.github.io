@@ -6,6 +6,7 @@ category:
 tags: ["Stava", "King of The Blue Hills"]
 ---
 <div class="row">
+    <div class="col-xs-12">
 
         <img class="img-responsive col-xl-5 col-lg-5 col-md-5 col-sm-6 col-xs-6 pull-right" src="/images/observatory.jpg"/>
 
@@ -19,7 +20,7 @@ tags: ["Stava", "King of The Blue Hills"]
             Overall results will be tracked on this page. Individual Segment Achievements will be tracked <a href="/results/">here.</a>
         </p>
   
-
+</div>
 </div>
 
 
