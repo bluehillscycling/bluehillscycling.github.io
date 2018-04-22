@@ -6,10 +6,9 @@ category:
 tags: ["Stava", "King of The Blue Hills"]
 ---
 <div class="row">
-    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6 pull-right">
-        <img class="img-responsive" src="/images/observatory.jpg"/>
-    </div>
-    <div class="col-xl-8 col-lg-8 col-md-4 col-sm-4">
+
+        <img class="img-responsive col-xl-5 col-lg-5 col-md-5 col-sm-6 col-xs-6 pull-right" src="/images/observatory.jpg"/>
+
         <p>
             The King of the Blue Hills Competition is Back!
         </p>
@@ -19,7 +18,7 @@ tags: ["Stava", "King of The Blue Hills"]
         <p>
             Overall results will be tracked on this page. Individual Segment Achievements will be tracked <a href="/results/">here.</a>
         </p>
-    </div>
+  
 
 </div>
 

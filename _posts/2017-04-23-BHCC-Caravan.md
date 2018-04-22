@@ -6,10 +6,10 @@ category:
 tags: []
 ---
 <div class="row">
-    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-xs-5">
-        <img class="img-responsive" src="/images/blog/rasputitsa.JPG"/>
+    <div class="">
+        <img class="img-responsive col-xl-5 col-lg-5 col-md-5 col-sm-6 col-xs-6 pull-left" src="/images/blog/rasputitsa.JPG"/>
     </div>
-    <div class="col-xl-8 col-lg-8">
+   
        <p>
             This weekend while returning from the Rasputitsa Spring Classic, the members of the Blue Hills Cycling Club set a Record for the number of times they had to stop and pee. 
         </p>
@@ -19,7 +19,7 @@ tags: []
         <p>  
             Andy could not be reached for comment.
         </p>
-    </div>
+  
 </div>
 
 

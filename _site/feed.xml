@@ -5,17 +5,15 @@
     <description>Road Cycling, Mountain Biking and Cyclocross in the Greater Boston Area</description>
     <link>http://bluehillscycling.github.io/</link>
     <atom:link href="http://bluehillscycling.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 22 Apr 2018 08:07:55 -0400</pubDate>
-    <lastBuildDate>Sun, 22 Apr 2018 08:07:55 -0400</lastBuildDate>
+    <pubDate>Sun, 22 Apr 2018 08:18:13 -0400</pubDate>
+    <lastBuildDate>Sun, 22 Apr 2018 08:18:13 -0400</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
         <title>Hold Fast Coaching Initiates Mandatory Navigation Training</title>
         <description>&lt;div class=&quot;row&quot;&gt;    
+    &lt;img class=&quot;img-responsive col-xl-5 col-lg-5 col-md-5 col-sm-6 col-xs-6 pull-left&quot; src=&quot;/images/blog/land-nav.jpg&quot; /&gt;
 
-&lt;div class=&quot;col-xl-5 col-lg-5 col-md-5 col-sm-6 col-xs-6 pull-left&quot;&gt;
-    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/blog/land-nav.jpg&quot; /&gt;
-&lt;/div&gt;
  
         &lt;p&gt;
             After this weekends navigational mishap at the Rasputitsa Gravel Grinder in East Burke, VT,  Hold Fast Coaching has announced that they will be adding bike race navigation as an option for all clients.
@@ -41,10 +39,9 @@
       <item>
         <title>King of the Blue Hills Returns</title>
         <description>&lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6 pull-right&quot;&gt;
-        &lt;img class=&quot;img-responsive&quot; src=&quot;/images/observatory.jpg&quot; /&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-xl-8 col-lg-8 col-md-4 col-sm-4&quot;&gt;
+
+        &lt;img class=&quot;img-responsive col-xl-5 col-lg-5 col-md-5 col-sm-6 col-xs-6 pull-right&quot; src=&quot;/images/observatory.jpg&quot; /&gt;
+
         &lt;p&gt;
             The King of the Blue Hills Competition is Back!
         &lt;/p&gt;
@@ -54,7 +51,7 @@
         &lt;p&gt;
             Overall results will be tracked on this page. Individual Segment Achievements will be tracked &lt;a href=&quot;/results/&quot;&gt;here.&lt;/a&gt;
         &lt;/p&gt;
-    &lt;/div&gt;
+  
 
 &lt;/div&gt;
 
@@ -73,10 +70,10 @@
       <item>
         <title>BHCC Sets Record for Number of Bathroom Stops</title>
         <description>&lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-xl-4 col-lg-4 col-md-4 col-sm-5 col-xs-5&quot;&gt;
-        &lt;img class=&quot;img-responsive&quot; src=&quot;/images/blog/rasputitsa.JPG&quot; /&gt;
+    &lt;div class=&quot;&quot;&gt;
+        &lt;img class=&quot;img-responsive col-xl-5 col-lg-5 col-md-5 col-sm-6 col-xs-6 pull-left&quot; src=&quot;/images/blog/rasputitsa.JPG&quot; /&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;col-xl-8 col-lg-8&quot;&gt;
+   
        &lt;p&gt;
             This weekend while returning from the Rasputitsa Spring Classic, the members of the Blue Hills Cycling Club set a Record for the number of times they had to stop and pee. 
         &lt;/p&gt;
@@ -86,7 +83,7 @@
         &lt;p&gt;  
             Andy could not be reached for comment.
         &lt;/p&gt;
-    &lt;/div&gt;
+  
 &lt;/div&gt;
 
 </description>
