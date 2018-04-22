@@ -21,7 +21,7 @@
   <link rel="stylesheet" type="text/css" href="/bootstrap/css/bhcc.css"/>
   <!--<script src="/bootstrap/js/jquery.js"></script>-->
   <!--<script src="/bootstrap/js/bootstrap.min.js"></script>-->
-  <script src="/bootstrap/js/main.js"></script>
+  
   <script src="/node_modules/angular/angular.min.js"></script>
   <script src="/node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
   <script src="/Javascript/app.js"></script>
@@ -38,30 +38,30 @@
   
  <div style ="background-color:#333; height:35px; margin-top:85px;"></div> 
  <div class = "row" style ="margin-top:-125px;">
-     <div class="col-lg-2 col-xl-2"></div>
+     <div class="col-lg-2 col-xl-2 col-md-1 col-sm-1"></div>
      <div class ="col-lg-10" style="margin:0px; "><img src='/images/BHHC-Banner.png'></div>
  </div>
-<nav class="navbar navbar-default">
+<nav  ng-controller="NavController" class="navbar navbar-default">
         <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display 
+        
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button class="navbar-toggle" type="button" ng-click="isCollapsed = !isCollapsed">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
           </div>
-      -->
+    
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class=col-lg-2></div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 col-lg-8">
+          <div class="col-lg-2 col-md-1 col-sm-1"></div>
+          <div uib-collapse="isCollapsed" class="navbar-collapse bs-js-navbar-collapse">
             <ul class="nav navbar-nav">
                     <li><a id="home" href="/" data-current-page="home">Home</a></li>
                     <li><a id="results" href="/results" data-current-page="home">Segment Data</a></li>
                     <li><a id="rules" href="/rules" data-current-page="results">The Rules</a></li>
                     <li><a href="/king_of_the_blue_hills" id ="strava">King of the Blue Hills</a></li>
+      
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -76,14 +76,14 @@
   
   <div style="background:#15426d; margin-top:0px;">
       <div class = "row"  >
-          <div class="col-lg-2 col-xl-2 col-md-2 col-sm-2"></div>
+          <div class="col-lg-2 col-xl-2 col-md-1 col-sm-2 col-sm-1"></div>
           <div class="col-lg-2 col-xl-2 col-md-2 col-sm-2 col-xs-4" style="padding-bottom:24px;">
               <img class="img-responsive"  src="/images/king.png"/>
           </div>
           <div class="col-lg-2 col-xl-2 col-md-2 col-sm-2 col-xs-4" style="padding-bottom:24px;">
                   <img class="img-responsive" src="/images/real.png"/>
           </div>
-          <div class="col-lg-2 col-xl-2 col-md-2 col-sm-2 col-xs-4" style="padding-bottom:24px;">
+          <div class="col-lg-2 col-xl-2 col-md-2 col-sm-2 hidden-xs" style="padding-bottom:24px;">
                   <img class="img-responsive" src="/images/results.png"/>
           </div>
           <div class="col-lg-2 col-xl-2 col-md-2 col-sm-2 col-xs-4" style="padding-bottom:24px;">
@@ -96,8 +96,8 @@
 
             <div class="home" >
         <div class="row">
-            <div class="col-lg-2 col-xl-2"></div>
-            <div class = "col-lg-5 col-xl-5" >
+            <div class="col-lg-2 col-xl-2 col-md-1 col-sm-1"></div>
+            <div class = "col-lg-5 col-xl-5 col-md-5 col-sm-5 col-xs-12" >
                 <!-- This loops through the paginated posts -->
                 
                 <h2><a href="/2018/04/21/land-nav.html">Hold Fast Coaching Initiates Mandatory Navigation Training</a></h2>
@@ -112,7 +112,7 @@
         <p>
             After this weekends navigational mishap at the Rasputitsa Gravel Grinder in East Burke, VT,  Hold Fast Coaching has announced that they will be adding bike race navigation as an option for all clients.
 
-            This instruction will include advanced topics in navigation such as "How to identify a green arrow".
+            This instruction will include advanced topics in navigation such as "How to identify a green arrow" and "Keeping your head up".
         </p>
 
     </div>
@@ -185,10 +185,10 @@
                 </div>  
                 <p class="rss-subscribe">subscribe<a href="/feed.xml">via RSS</a></p>
             </div>
-            <div class = "col-lg-4 col-xl-4" ng-controller="StravaController">
+            <div class = "col-lg-4 col-xl-4 col-md-4" ng-controller="StravaController">
                     <h3><a href="/results">Click Here For Segment Details</a></h3>
                     <div class="row">
-                            <div class="col-lg-4 col-xl-4">
+                            <div class="col-lg-4 col-xl-4 col-md-4">
                                 <h4>Mens Points</a></h4>
                                 <table class="table table-condensed table-responsive table-bordered">
                                     <tr>
@@ -201,7 +201,7 @@
                                     </tr>
                                 </table>
                             </div>
-                            <div class="col-lg-4 col-xl-4">
+                            <div class="col-lg-5 col-xl-5 col-md-4">
                                     <h4>Womens Points</a></h4>
                                     <table class="table table-condensed table-responsive table-bordered">
                                         <tr>

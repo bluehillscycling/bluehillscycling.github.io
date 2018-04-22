@@ -1,8 +1,15 @@
 var bhccControllers = angular.module('bhccControllers', ['ui.bootstrap']);
 
+bhccControllers.controller('NavController', function ($scope) {
+
+    $scope.isCollapsed = true;
+
+});
+
 
 bhccControllers.controller('StravaController', function ($scope, $http) {
 
+    
 
     var headers =  {
         'Access-Control-Allow-Origin': '*',
