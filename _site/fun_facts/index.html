@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Results</title>
+  <title>Fun Facts</title>
   <meta name="description" content="Road Cycling, Mountain Biking and Cyclocross in the Greater Boston Area">
 
   <link rel="stylesheet" href="/css/main.css">
@@ -15,7 +15,7 @@
  
 
 
-  <link rel="canonical" href="http://bluehillscycling.github.io/results/">
+  <link rel="canonical" href="http://bluehillscycling.github.io/fun_facts/">
   <link rel="alternate" type="application/atom+xml" title="King of The Blue Hills" href="http://bluehillscycling.github.io/feed.xml" />
   
   <link rel="stylesheet" type="text/css" href="/bootstrap/css/bhcc.css"/>
@@ -82,93 +82,29 @@
     <div class="col-lg-8">
         <div class="post">
             <header class="post-header">
-            <h1 class="post-title">Results</h1>
+            <h1 class="post-title">Fun Facts</h1>
             </header>
           
             <article class="post-content ">
               
 
-
-<div ng-controller="SegmentController">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="LGJMFNAUL7JL4">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-            </form>
-        <div class="row" style="height:150px;overflow-y: scroll">
-                <div class="col-lg-3 col-xl-3">
-                    <h4>Mens Points</a></h4>
-                    <table class="table table-condensed table-responsive">
-                        <tr>
-                            <th>Name</th>
-                            <th>Points</th>     
-                        </tr>
-                        <tr ng-repeat="entry in StravaData.segments_men | orderBy: '-points' ">
-                            <td>[[entry.name]]</td>
-                            <td>[[entry.points]]</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="col-lg-3 col-xl-3">
-                        <h4>Womens Points</a></h4>
-                        <table class="table table-condensed table-responsive">
-                            <tr>
-                                <th>Name</th>
-                                <th>Points</th>     
-                            </tr>
-                            <tr ng-repeat="entry in StravaData.segments_women | orderBy: '-points' ">
-                                <td>[[entry.name]]</td>
-                                <td>[[entry.points]]</td>
-                            </tr>
-                        </table>
-                </div>
-        </div>
-    <div class="row" style="margin-top:36px;">
-        <div ng-repeat="data in StravaData.segment_data">
-            <div class="col-lg-3 col-xl-3">
-                <h4><a ng-href="[[data.url]]">[[data.segment_name]]</a></h4>
-                <table class="table table-condensed table-responsive">
-                    <tr>
-                        <th>Name</th>
-                        <th>Rank</th>
-                        <th>time</th>
-                    </tr>
-                    <tr ng-repeat="entry in data.male_data.entries" ng-if="entry.rank < 11">
-                        <td>[[entry.athlete_name]]</td>
-                        <td>[[entry.rank]]</td>
-                        <td>[[entry.elapsed_time | secondsToDateTime | date:'HH:mm:ss']]</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+<div ng-controller="FunFactController">
+    <div class="col-lg-3 col-xl-3">
+        <h4>Access Road</a></h4>
+        <table class="table table-condensed table-responsive">
+            <tr>
+                <th>Name</th>
+                <th>Attempts</th>     
+            </tr>
+            <tr ng-repeat="entry in StravaData.fun_facts | orderBy: '-efforts' ">
+                <td>[[entry.athlete]]</td>
+                <td>[[entry.efforts]]</td>
+            </tr>
+        </table>
     </div>
-    
-   
+
+
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </article>
           
           </div>

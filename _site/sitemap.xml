@@ -33,7 +33,16 @@
   
     
       <url>
-        <loc>http://bluehillscycling.github.io/results/</loc>
+        <loc>http://bluehillscycling.github.io/fun_facts/</loc>
+        <lastmod>2018-04-18T13:49:30-04:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+       </url>
+    
+  
+    
+      <url>
+        <loc>http://bluehillscycling.github.io/king_of_the_blue_hills/</loc>
         <lastmod>2018-04-18T13:49:30-04:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -51,7 +60,7 @@
   
     
       <url>
-        <loc>http://bluehillscycling.github.io/king_of_the_blue_hills/</loc>
+        <loc>http://bluehillscycling.github.io/results/</loc>
         <lastmod>2018-04-18T13:49:30-04:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
