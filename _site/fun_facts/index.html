@@ -94,11 +94,15 @@
         <table class="table table-condensed table-responsive">
             <tr>
                 <th>Name</th>
-                <th>Attempts</th>     
+                <th>Attempts</th>
+                <th>Daily Max</th> 
+                <th>Activity</th>    
             </tr>
             <tr ng-repeat="entry in StravaData.fun_facts | orderBy: '-efforts' ">
                 <td>[[entry.athlete]]</td>
                 <td>[[entry.efforts]]</td>
+                <td>[[entry.max]]</td>
+                <td><a ng-href="https://www.strava.com/activities/[[entry.max_date]]">[[entry.max_date]]</a></td>
             </tr>
         </table>
     </div>
