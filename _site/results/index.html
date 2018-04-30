@@ -88,7 +88,6 @@
             <article class="post-content ">
               
 
-
 <div ng-controller="SegmentController">
     <!--
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -130,7 +129,7 @@
     <div class="row" style="margin-top:36px;">
         <div ng-repeat="data in StravaData.segment_data">
             <div class="col-lg-3 col-xl-3">
-                <h4><a ng-href="[[data.url]]">[[data.segment_name]]</a></h4>
+                <h4><a ng-href="[[data.url]]">[[data.segment_name]]</a> KOM Value: [[data.segment_points]]</h4>
                 <table class="table table-condensed table-responsive">
                     <tr>
                         <th>Name</th>

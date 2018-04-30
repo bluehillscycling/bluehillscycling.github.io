@@ -48,8 +48,6 @@ bhccControllers.controller('SegmentController', function ($scope, $http) {
 
 bhccControllers.controller('FunFactController', function ($scope, $http) {
 
-    
-
     var headers =  {
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
