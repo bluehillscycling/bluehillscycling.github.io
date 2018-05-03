@@ -9,7 +9,7 @@ bhccControllers.controller('NavController', function ($scope) {
 
 bhccControllers.controller('SegmentController', function ($scope, $http) {
 
-    
+    $scope.segmentsLoaded = false;
 
     var headers =  {
         'Access-Control-Allow-Origin': '*',
@@ -32,7 +32,7 @@ bhccControllers.controller('SegmentController', function ($scope, $http) {
 
             $scope.StravaData = data.data
 
-            var d = ""
+            $scope.segmentsLoaded = true;
 
         }, function (error) {
 
