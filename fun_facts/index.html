@@ -20,7 +20,7 @@ sitemap:
                 <th>Daily Max</th> 
                 <th>Activity</th>    
             </tr>
-            <tr ng-repeat="entry in StravaData.fun_facts | orderBy: '-efforts' ">
+            <tr ng-repeat="entry in StravaData | orderBy: '-efforts' ">
                 <td>[[entry.athlete]]</td>
                 <td>[[entry.efforts]]</td>
                 <td>[[entry.max]]</td>

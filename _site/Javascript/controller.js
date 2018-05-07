@@ -23,7 +23,6 @@ bhccControllers.controller('SegmentController', function ($scope, $http) {
         headers: headers,
         useXDomain: true,
         dataType: "jsonp"
-        //data: { test: 'test' }
     }
 
 
@@ -48,34 +47,83 @@ bhccControllers.controller('SegmentController', function ($scope, $http) {
 
 bhccControllers.controller('FunFactController', function ($scope, $http) {
 
+    $scope.StravaData = []
     var headers =  {
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
         'Access-Control-Allow-Headers': 'Content-Type, X-Requested-With'
     };
 
-    var req = {
+    var req1 = {
+
         method: 'GET',
-        url: 'https://bhcc-strava.herokuapp.com/bhcc/funFacts.json',
+        url: 'https://bhcc-strava.herokuapp.com//bhcc/users.json',
         headers: headers,
         useXDomain: true,
-        dataType: "jsonp"
-        //data: { test: 'test' }
+        dataType: "jsonp",
+       
     }
 
+    $http(req1).then(function (userdata) {
+
+        var all_ids = userdata.data.user_ids
+
+        var arrayOfIds = []
+        var tempArray = []
+
+        for (var i = 0; i < all_ids.length; ++i) {
+
+            if (i % 3 == 0) {
+                tempArray = []
+            }
+            tempArray.push(all_ids[i])
+          
+            if (i % 3 == 2 || i == all_ids.length-1) {
+                arrayOfIds.push(tempArray)
+            }
+        }
+
+        for (var i = 0; i < arrayOfIds.length; ++i) {
+            
+            var req2 = {
+
+                method: 'GET',
+                url: 'https://bhcc-strava.herokuapp.com//bhcc/funFacts.json',
+                headers: headers,
+                useXDomain: true,
+                //dataType: "jsonp",
+                params: {ids: JSON.stringify(arrayOfIds[i])},
+            }
+
+            $http(req2).then(function (data) {
+
+                $scope.StravaData = $scope.StravaData.concat(data.data.fun_facts)
+
+                var d = ""
+
+            }, function (error) {
+
+                console.log(error, 'can not get data.');
+
+            })
+
+        }
 
 
-        $http(req).then(function (data) {
 
-            $scope.StravaData = data.data
 
-            var d = ""
 
-        }, function (error) {
 
-            console.log(error, 'can not get data.');
 
-        })
+    }, function (error) {
+
+        console.log(error, 'can not get data.');
+
+    })
+
+
+
+
 
 
 
