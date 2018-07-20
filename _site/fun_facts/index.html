@@ -43,7 +43,6 @@
  </div>
 <nav  ng-controller="NavController" class="navbar navbar-default">
         <div class="container-fluid">
-        
           <div class="navbar-header">
             <button class="navbar-toggle" type="button" ng-click="isCollapsed = !isCollapsed">
               <span class="sr-only">Toggle navigation</span>
@@ -87,9 +86,9 @@
           
             <article class="post-content ">
               
-
 <div ng-controller="FunFactController">
     <div class="col-lg-3 col-xl-3">
+            <uib-progressbar class="progress-striped active" value="dynamic" type=""> <i ng-show="showWarning">!!! Watch out !!!</i></uib-progressbar>
         <h4>Access Road</a></h4>
         <table class="table table-condensed table-responsive">
             <tr>
@@ -106,8 +105,6 @@
             </tr>
         </table>
     </div>
-
-
 </div>
             </article>
           
